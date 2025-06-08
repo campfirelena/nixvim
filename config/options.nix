@@ -19,5 +19,4 @@
   };
   globals.mapleader = " ";
   globals.maplocalleader = " ";
-};
 }

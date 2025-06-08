@@ -12,12 +12,12 @@
       "x86_64-linux"
     ];
 
-    perSystem = { system, ... }:
+    perSystem = { pkgs, system, ... }:
     let
-      nixvimlib = nixvim.lib.${system};
-      nixvim' = nixvim.legacypackages.${system};
+      nixvimLib = nixvim.lib.${system};
+      nixvim' = nixvim.legacyPackages.${system};
       nixvimModule = {
-        inherit system;
+        inherit pkgs;
 	module = import ./config; #import the module directly
 	extraSpecialArgs = {
 	  #inherit (inputs) foo;

@@ -25,5 +25,4 @@
         options.desc = "Window right";
       }
     ];
-};
 }

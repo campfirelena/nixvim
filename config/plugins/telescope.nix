@@ -1,7 +1,7 @@
 { ... }:
 {
   plugins.treesitter = {
-    enable.true
+    enable = true;
     lazyLoad.settings = {
     cmd = [
       "TSInstall"
@@ -24,9 +24,6 @@
     indent = {
       enable = true;
     };
-  };
-  extensions = {
-    fzf-native.enable = true;
   };
 };
 }
