@@ -1,6 +1,6 @@
 { ... }:
 {
   colorschemes = {
-    dracula.enable = true;
+    catppuccin.enable = true;
   };
 }

@@ -1,7 +1,6 @@
-{ ... }:
 {
 plugins = {
-  nvim-tree.enable = true;
+  neo-tree.enable = true;
   treesitter.enable = true;
   nvim-autopairs.enable = true;
   trouble.enable = true;
