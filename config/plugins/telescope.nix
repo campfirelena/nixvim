@@ -15,7 +15,6 @@
     ];
     lazy.__raw = "vim.fn.argc(-1) == 0";
   };
-  folding = true;
   settings = {
     highlight = {
       enable = true;
