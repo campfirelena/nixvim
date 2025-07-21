@@ -1,4 +1,4 @@
-_:{
+{ pkgs, ... }:{
   imports = [
     # Plugins
     ./plugins/dashboard.nix
