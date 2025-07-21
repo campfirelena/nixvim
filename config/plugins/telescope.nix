@@ -1,27 +1,8 @@
 {
-  plugins.treesitter = {
+  plugins.telescope = {
     enable = true;
-    lazyLoad.settings = {
-    cmd = [
-      "TSInstall"
-      "TSUpdate"
-      "TSUpdateSync"
-    ];
-    event = [
-      "BufNewFile"
-      "BufReadPost"
-      "BufWritePost"
-      "DeferredUIEnter"
-    ];
-    lazy.__raw = "vim.fn.argc(-1) == 0";
-  };
-  settings = {
-    highlight = {
-      enable = true;
+    extensions = {
+      zoxide.enable = true;
     };
-    indent = {
-      enable = true;
-    };
-  };
   };
 }

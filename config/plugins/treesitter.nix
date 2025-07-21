@@ -1,8 +1,39 @@
 {
   plugins.treesitter = {
     enable = true;
-    settings = {
-      indent.enable = true;
+    lazyLoad.settings = {
+      cmd = [
+        "TSInstall"
+        "TSUpdate"
+        "TSUpdateSync"
+      ];
+      event = [
+        "BufNewFile"
+        "BufReadPost"
+        "BufWritePost"
+        "DeferredUIEnter"
+      ];
+      lazy.__raw = "vim.fn.argc(-1) == 0";
     };
+    settings = {
+      highlight = {
+        enable = true;
+      };
+      indent = {
+        enable = true;
+      };
+    };
+    grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
+      bash
+      json
+      lua
+      make
+      markdown
+      nix
+      toml
+      vim
+      vimdoc
+      yaml
+    ];
   };
 }
