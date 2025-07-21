@@ -20,7 +20,7 @@
         inherit pkgs;
 	module = import ./config; #import the module directly
 	extraSpecialArgs = {
-	  #inherit (inputs) foo;
+	  inherit (inputs);
 	};
       };
       nvim = nixvim'.makeNixvimWithModule nixvimModule;
