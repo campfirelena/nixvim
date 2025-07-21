@@ -1,5 +1,8 @@
 {
   colorschemes = {
-    catppuccin.enable = true;
+    everforest = {
+      enable = true;
+      settings.background = "medium";
+    };
   };
 }
