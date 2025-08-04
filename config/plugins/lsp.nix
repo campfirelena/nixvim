@@ -1,7 +1,16 @@
 {
   plugins.lsp = {
     enable = true;
-    autoLoad = true;
-    # Add custom config and servers
+    inlayHints = true;
+
+    servers = {
+      bashls.enable = true;
+      cssls.enable = true;
+      html.enable = true;
+      lua_ls.enable = true;
+      markdown_oxide.enable = true;
+      nixd.enable = true;
+      vimls.enable = true;
+    };
   };
 }
