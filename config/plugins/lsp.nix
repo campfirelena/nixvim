@@ -11,6 +11,7 @@
       markdown_oxide.enable = true;
       nixd.enable = true;
       qmlls.enable = true;
+      qmlls.cmd = [ "qmlls" "-E" ];
       vimls.enable = true;
     };
   };
