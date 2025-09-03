@@ -3,7 +3,7 @@
     # Plugins
     ./plugins/dashboard.nix
     ./plugins/lazy-load.nix
-    ./plugins/lsp.nix
+    # ./plugins/lsp.nix disabled for now, super annoying
     ./plugins/lualine.nix
     ./plugins/neo-tree.nix
     ./plugins/oneliners.nix
