@@ -1,20 +1,21 @@
 {
   autoCmd = [
-    { # Close nvim-tree if it's the last buffer open
-      event = [ 'BufEnter' ];
-      pattern = "*";
-      callback = { __raw = 'function() if #vim.apt.nvim_list_bufs() == 1 and vim.bo.filetype == "NvimTree" then vim.cmd("quit") end end'; };
-      }
-    }
+    #{ # Close nvim-tree if it's the last buffer open
+      #event = [ "BufEnter" ];
+      #pattern = "*";
+      #callback = ''if vim.apt.nvim_list_bufs() == 1 and vim.bo.filetype == "NvimTree" then
+      #  vim.cmd("quit")
+      #end'';
+    #}
     { # Highlight text on yank
-      event = [ 'TextYankPost' ];
+      event = [ "TextYankPost" ];
       pattern = "*";
-      callback = { __raw = 'function() vim.highlight.on_yank({ timeout = 300 }) end};
+      callback = "function() vim.highlight.on_yank({ timeout = 300 }) end";
     }
     { # Spellcheck in markdown
-      event = [ 'FileType' ];
-      pattern = 'markdown';
-      command = 'setlocal spell wrap';
+      event = [ "FileType" ];
+      pattern = "markdown";
+      command = "setlocal spell wrap";
     }
   ];
 }
