@@ -4,7 +4,7 @@
     ./plugins/lazy-load.nix
     ./plugins/lsp.nix
     ./plugins/lualine.nix
-    ./plugins/neo-tree.nix
+    ./plugins/nvim-tree.nix
     ./plugins/oneliners.nix
     ./plugins/telescope.nix
     ./plugins/treesitter.nix
