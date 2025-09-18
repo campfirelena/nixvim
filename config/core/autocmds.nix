@@ -7,11 +7,6 @@
       #  vim.cmd("quit")
       #end'';
     #}
-    { # Highlight text on yank
-      event = [ "TextYankPost" ];
-      pattern = "*";
-      callback = "function() vim.highlight.on_yank({ timeout = 300 }) end";
-    }
     { # Spellcheck in markdown
       event = [ "FileType" ];
       pattern = "markdown";

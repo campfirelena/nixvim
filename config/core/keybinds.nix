@@ -32,7 +32,7 @@
       }
       {
         key = "<leader>t";
-        action = "NvimTreeToggle<CR>";
+        action = ":NvimTreeToggle<CR>";
         mode = "n";
         options.desc = "Toggle nvim-tree";
       }
