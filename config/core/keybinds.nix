@@ -45,8 +45,14 @@
       {
         key = "<leader>i";
         action = "=gv";
-        mode = "i";
+        mode = "v";
         options.desc = "Auto Indent";
       }
+    {
+        key = "<leader>l";
+        action = ":Twilight<CR>";
+        mode = "n";
+        options.desc = "Toggle Twilight";
+    }
     ];
 }
