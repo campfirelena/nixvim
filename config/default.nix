@@ -1,10 +1,11 @@
 { ... }:{
   imports = [
     # Plugins
+    ./plugins/dashboard.nix
     ./plugins/lazy-load.nix
     ./plugins/lsp.nix
     ./plugins/lualine.nix
-    ./plugins/nvim-tree.nix
+    ./plugins/neo-tree.nix
     ./plugins/oneliners.nix
     ./plugins/telescope.nix
     ./plugins/treesitter.nix

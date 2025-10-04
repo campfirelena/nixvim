@@ -5,7 +5,6 @@ plugins = {
   nix.enable = true;
   web-devicons.enable = true;
   smear-cursor.enable = true;
-  neoscroll.enable = true;
   twilight.enable = true;
 };
 }

@@ -32,9 +32,9 @@
       }
       {
         key = "<leader>t";
-        action = ":NvimTreeToggle<CR>";
+        action = ":Neotree<CR>";
         mode = "n";
-        options.desc = "Toggle nvim-tree";
+        options.desc = "Toggle neo-tree";
       }
       {
         key = "<leader>w";
