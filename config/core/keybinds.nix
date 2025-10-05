@@ -2,25 +2,25 @@
     keymaps = [
       {
         key = "<C-j>";
-        action = "<C-w>j";
+        action = ''function() smart_move('j','-D') end'';
         mode = "n";
         options.desc = "Window down";
       }
       {
         key = "<C-h>";
-        action = "<C-w>h";
+        action = ''function() smart_move('h','-L') end'';
         mode = "n";
         options.desc = "Window left";
       }
       {
         key = "<C-k>";
-        action = "<C-w>k";
+        action = ''function() smart_move('k','-U') end'';
         mode = "n";
         options.desc = "Window up";
       }
       {
         key = "<C-l>";
-        action = "<C-w>l";
+        action = ''function() smart_move('l','-R') end'';
         mode = "n";
         options.desc = "Window right";
       }

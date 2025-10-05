@@ -1,5 +1,17 @@
 { ... }:
 {
+  config = {
+    extraConfigLuaPre = 
+      # lua
+      ''
+        local function smart_move(direction, tmux_cmd)
+          local curwin = vim.api.nvim_get_current_win()
+          vim.cmd('wincmd ' .. direction)
+          if curwin == vim.api.nvim_get_current_win() then
+            vim.fn.system('tmux select-pane ' .. tmux_cmd)
+          end
+        end 
+      '';
   opts = {
     # numbers on the side go brr :3
     number = true;
@@ -26,4 +38,5 @@
   };
   globals.mapleader = " ";
   globals.maplocalleader = " ";
+  };
 }
